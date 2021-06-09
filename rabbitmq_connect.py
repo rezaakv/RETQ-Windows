@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Unused file for now
 import pika
 
 credentials = pika.PlainCredentials('', '')

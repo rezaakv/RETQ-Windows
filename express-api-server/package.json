@@ -9,6 +9,8 @@
   "author": "Reza Akhavan",
   "license": "GPL-2.0-only",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "js-yaml": "^4.1.0"
   }
 }

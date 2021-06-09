@@ -1,8 +1,17 @@
-const amqp = require('amqplib/callback_api')
+const amqp = require('amqplib/callback_api');
+const fs = require('fs');
+const yaml = require('js-yaml');
+
+let data;
+try {
+  let fileContents = fs.readFileSync('./creds.yml', 'utf8');
+  data = yaml.load(fileContents);
+} catch (e) {
+  console.log(e);
+}
 
 // Create connection
-amqp.connect('localhost',
- (err, conn) => {
+amqp.connect(data.mqserveraddress, (err, conn) => {
   if (err) throw err;
   // Create channel
   conn.createChannel((err, ch) => {
@@ -12,7 +21,7 @@ amqp.connect('localhost',
 
     ch.assertQueue(queueName, { durable: false });
 
-    // Recieve message
+    // Receive message
     ch.consume(queueName,(message) => {
       console.log("Recieved : " + message.content.toString());
       const spawn = require("child_process").spawn;
