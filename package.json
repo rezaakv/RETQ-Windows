@@ -1,0 +1,23 @@
+{
+  "name": "windows-controller-ios-shortcuts",
+  "version": "1.0.0",
+  "description": "Connection to queue",
+  "main": "rabbitmq-publisher.js",
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezaakv/windows-controller-iOS-shortcuts.git"
+  },
+  "author": "Reza Akhavan",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/rezaakv/windows-controller-iOS-shortcuts/issues"
+  },
+  "homepage": "https://github.com/rezaakv/windows-controller-iOS-shortcuts#readme"
+}

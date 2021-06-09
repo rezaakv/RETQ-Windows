@@ -1,0 +1,14 @@
+{
+  "name": "express-api-server",
+  "version": "1.0.0",
+  "description": "The Api server for publishing to rabbitMQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reza Akhavan",
+  "license": "GPL-2.0-only",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
