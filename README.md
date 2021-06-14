@@ -1,3 +1,3 @@
-# windows-controller-iOS-shortcuts
+# Rapid Encrypted tasks queue for Windows
 
-Let's create shortcuts that control your Windows machine. 
+Let's make a Windows machine controllable with safety and speed in mind. 
